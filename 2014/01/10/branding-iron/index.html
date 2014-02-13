@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-    <title>Custom Branding Iron</title>
+    <title>Inexpensive Custom Branding Iron</title>
 
     <meta name='description' content='' />
 
@@ -69,46 +69,67 @@
     </div>
 
     <div class='content'>
-      <div class='preview'>
+      <div id='content' class='main-body'>
+    
+<div class='post-preview-picture'>
+    <img src='/seabird-site/assets/branded-bowl.jpg'>
 </div>
 
-<div id='content' class='main-body'>
-    <h2>Custom Branding Iron</h2>
-<p class="meta">10 Jan 2014</p>
+
+<h2>Inexpensive Custom Branding Iron <small>10 Jan 2014</small></h2>
 
 <div class="post">
-<p>Following <a href="http://www.thefrankes.com/wp/?s=branding+iron">an article</a> on how to
-model a custom branding iron, I decided to take a stab at it. Here are some
-notes on the process. My mission was to create a brand that was my signature.</p>
+    <p>For a while now I&#39;ve been wanting to be able to apply a craftsman signature to
+some of my pieces, but custom branding irons can be pretty expensive. Some
+people go the route of starting with a piece of flat steel and grinding away
+parts of it to reveal a pattern. Others bend metal into a simple pattern. For
+something like a signature, the first approach wouldn&#39;t produce as fine a
+result as I would like and the second approach isn&#39;t a real option.</p>
+
+<p>Following <a href="http://www.thefrankes.com/wp/?s=branding+iron">an article</a> on
+producing a 3D model of the brand and then buying a print of the part from
+<a href="https://www.shapeways.com/">shapeways</a>. In the original article, the part was
+US$6, but mine weighed in at US$21.</p>
+
+<p>It&#39;s helpful to be familiar with vector art, and ideally some basic 3D modeling
+since this approach involves a scanner and the following free software:</p>
+
+<ul>
+<li><a href="http://inkscape.org/en/">Inkscape</a></li>
+<li><a href="http://www.blender.org/">Blender</a></li>
+<li><a href="http://www.sketchup.com/">SketchUp</a></li>
+</ul>
 
 <h2>Inkscape</h2>
 
-<p>In order to get my signature in, I took a few tries with a sharpie and scanned
-the best of these. Once scanned, Inkscape can <code>Trace Bitmap</code> which generates
-a path the represents the signature. It&#39;s pretty noisy, so I simplified the path
-a couple of times to smooth it and then deleted all the stray speckles and
-control points. The remaining control points needed a little tuning in places to
-get rid of some sharp points.</p>
+<p>The process begins with getting a rough scan of a fancy signature. I played around with it on a sheet of paper about a dozen times with a sharpie until I
+found one that I liked. Once scanned, Inkscape can <code>Trace Bitmap</code> which
+generates a path. It&#39;s pretty noisy, so I simplified the path a couple of times
+to smooth it and then deleted all the stray speckles. The remaining control
+points needed a little tuning in places to get rid of some sharp points.</p>
 
-<p>Repeat the same process to create a new path that will serve as the backing
-plate for the signature. Export the SVG for the signature in one file and the
-filled-in backing in another.</p>
+<p>The brand will need a backing, so I created a second path that is in the rough
+shape of the outside of the design. Export the backing path in one file and the
+design itself in another in anticipation of importing them into Blender.</p>
 
 <h2>Blender</h2>
 
-<p>Import the backing plate and the signature into Blender. Extrude the signature
-by 0.625mm (for a total thickness of 1.25mm) and the backing plate by 1.5mm
-(for a total thickness of 3mm, the minimum wall thickness for Shapeways). Offset
-the backing plate to align it with the signature. <strong>Remember to align it to the
-appropriate face so that the text will be in the right orientation when used as
-a branding iron.</strong></p>
+<p>Unfortunately the free version of SketchUp doesn&#39;t allow you to extrude an
+arbitrary path, so importing these SVG paths into Blender is so we can take the
+flat paths and extrude them into 3D objects.</p>
+
+<p>Extrude the design by 0.625mm (for a total thickness of 1.25mm) and the backing
+plate by 1.5mm (for a total thickness of 3mm, the minimum wall thickness for
+Shapeways when printing in stainless steel). Offset the backing plate to align
+it with the design. <strong>Remember to align it to the appropriate face so that the
+text will be in the right orientation when used as a branding iron.</strong></p>
 
 <p>Convert each of these into meshes and <code>join</code> them. Export it as a collada file.</p>
 
 <h2>SketchUp</h2>
 
 <p>The only reason to introduce SketchUp into the mix is so that we can scale the
-signature to the exact dimensions. <strong>Do not scale the thickness, but only the
+design to the exact dimensions. <strong>Do not scale the thickness, but only the
 height and width.</strong> While you&#39;re here, add a 1/4&quot;-thick rod to the back so that
 it can be attached to a handle.</p>
 
@@ -116,6 +137,19 @@ it can be attached to a handle.</p>
 
 <p>Finally, you&#39;re ready to use the model exported from SketchUp to upload it to
 Shapeways (or another service) and order a print.</p>
+
+<h2>Mounting and Using</h2>
+
+<p>I ended up boring out a hole in a steel rod and adding a set screw so that I
+can mount it. I anticipate making more of these and wanted to have the ability
+to interchange them.</p>
+
+<p>For the handle, I turned a roughly palm-sized handle and epoxied the rod into
+it. When using it, I heat it up over an open flame and heat it up as evenly as
+I can and try it out a few times on a scrap piece of wood of the same species
+before applying it to the word piece.</p>
+
+<p><img src="/seabird-site/assets/branding-iron.jpg" alt="Branding Iron"></p>
 
 </div>
 

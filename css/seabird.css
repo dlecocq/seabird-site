@@ -57,9 +57,17 @@
     text-align: center;
 }
 
-
 .preview > img {
     width: 20%;
     height: 300px;
     float: left;
+}
+
+.post-preview-picture > img {
+    width: 100%;
+}
+
+
+.post * img {
+    width: 100%;
 }
